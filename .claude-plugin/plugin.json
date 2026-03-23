@@ -1,0 +1,10 @@
+{
+  "name": "story",
+  "description": "Cross-session context persistence for AI coding projects. Tracks tickets, issues, roadmap, and handovers so every session builds on the last.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amir Shayegh"
+  },
+  "homepage": "https://github.com/AmirShayegh/ClaudeStory",
+  "repository": "https://github.com/AmirShayegh/ClaudeStory"
+}
