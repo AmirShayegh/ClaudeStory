@@ -97,7 +97,7 @@ This pattern emerged from 3 production projects:
 
 ## Features
 
-- **27 MCP tools** - Read and write project state from any MCP-compatible AI assistant
+- **30 MCP tools** - Read and write project state from any MCP-compatible AI assistant
 - **Full CLI** - `claudestory status`, `ticket next`, `recommend`, `snapshot`, `recap`, `export`, `validate`, and more
 - **`/story` skill** - One-command session start for Claude Code
 - **Notes** - Unstructured brainstorming with tags, archiving, and search
