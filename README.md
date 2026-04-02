@@ -113,4 +113,4 @@ npm install -g @anthropologies/claudestory
 
 ---
 
-© 2026 Amir Shayegh. Released under the [MIT License](LICENSE).
+© 2026 Amir Shayegh. Free for personal and noncommercial use under the [PolyForm Noncommercial License 1.0](LICENSE). For commercial licensing, contact amirshayegh@me.com.
