@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "claudestory snapshot --quiet"
+            "command": "claudestory snapshot --quiet || true"
           }
         ]
       }

@@ -3,6 +3,8 @@ name: go
 description: Cross-session context persistence for AI coding projects. Load project context, manage sessions, guide setup.
 ---
 
+> **Note:** When installed as a plugin, this skill is invoked as `/story:go`. All `/story` references below apply to `/story:go` and its arguments (e.g., `/story:go auto`, `/story:go handover`).
+
 # /story -- Project Context & Session Management
 
 claudestory tracks tickets, issues, roadmap, and handovers in a `.story/` directory so every AI coding session builds on the last instead of starting from zero.

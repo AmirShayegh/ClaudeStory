@@ -113,4 +113,4 @@ npm install -g @anthropologies/claudestory
 
 ---
 
-The claudestory CLI is free to install and use via npm. © 2026 Amir Shayegh. All rights reserved.
+© 2026 Amir Shayegh. Released under the [MIT License](LICENSE).
