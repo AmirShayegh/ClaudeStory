@@ -2,6 +2,8 @@
 
 This file is referenced from SKILL.md when no `.story/` directory exists but project indicators are present. SKILL.md has already determined that setup is needed before routing here.
 
+**Skill command name:** When this file references `/story` in user-facing output, use the actual command that invoked you (e.g., `/story` for standalone install, `/story:go` for plugin install). Same for `/story auto` -- use `/story:go auto` if invoked as a plugin.
+
 **If arriving from Step 2b (scaffold detection):** The project already has an empty `.story/` scaffold but no tickets. Skip 1a and start at **1b. Existing Project -- Analyze**.
 
 ## Design Rules
@@ -375,7 +377,7 @@ Show the user a structured proposal (table format, not raw JSON):
 
 Before asking for approval, briefly explain what they're looking at:
 
-"**How this works:** Phases are milestones in your project's development. They track progress from setup to shipping. Tickets are specific work items within each phase. After setup, invoking this skill at the start of any Claude Code session loads this context automatically. Claude will know your project's state, what was done last session, and what to work on next."
+"**How this works:** Phases are milestones in your project's development. They track progress from setup to shipping. Tickets are specific work items within each phase. After setup, typing `/story` at the start of any Claude Code session loads this context automatically. Claude will know your project's state, what was done last session, and what to work on next."
 
 Then use ONE `AskUserQuestion` that combines approval and refinement depth (do not ask two separate questions):
 - question: "How should I proceed with this proposal?"
@@ -564,9 +566,9 @@ After creation completes:
 
 Present a brief completion message and tell the user how to start:
 
-"Your project is set up -- [X] phases, [Y] tickets, CLAUDE.md, and RULES.md created. Invoke this skill at the start of any session to load context and see what to work on. Or invoke it with `auto` to let me work through the tickets autonomously."
+"Your project is set up -- [X] phases, [Y] tickets, CLAUDE.md, and RULES.md created. Type **`/story`** at the start of any session to load context and see what to work on. Or type **`/story auto`** to let me work through the tickets autonomously."
 
-Keep it to 2-3 sentences. The system teaches itself through use -- this skill loads context, shows status, and suggests next work. No need for a manual.
+Keep it to 2-3 sentences. The system teaches itself through use -- `/story` loads context, shows status, and suggests next work. No need for a manual.
 
 ---
 
