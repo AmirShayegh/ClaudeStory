@@ -1,10 +1,21 @@
 {
   "name": "story",
   "description": "Cross-session context persistence for AI coding projects. Tracks tickets, issues, roadmap, and handovers so every session builds on the last.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
-    "name": "Amir Shayegh"
+    "name": "Amir Shayegh",
+    "url": "https://github.com/AmirShayegh"
   },
-  "homepage": "https://github.com/AmirShayegh/ClaudeStory",
-  "repository": "https://github.com/AmirShayegh/ClaudeStory"
+  "homepage": "https://claudestory.com",
+  "repository": "https://github.com/AmirShayegh/ClaudeStory",
+  "license": "MIT",
+  "keywords": [
+    "session-continuity",
+    "project-management",
+    "agentic-development",
+    "tickets",
+    "handovers",
+    "mcp",
+    "autonomous"
+  ]
 }

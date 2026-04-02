@@ -26,7 +26,15 @@ claudestory setup-skill
 /story
 ```
 
-On new projects, `/story` will analyze your codebase and offer to set up `.story/` with phases, tickets, and issues — no manual init needed.
+On new projects, `/story` will analyze your codebase and offer to set up `.story/` with phases, tickets, and issues -- no manual init needed.
+
+### Alternative: Install as Claude Code plugin
+
+```
+/plugin install story@claude-plugins-official
+```
+
+When installed as a plugin, the skill is available as `/story:go`.
 
 ## What It Creates
 
@@ -91,7 +99,7 @@ Session start          Work                    Session end
 
 ## CLI + MCP Reference
 
-See [skill/reference.md](skill/reference.md) for the full list of CLI commands and MCP tools.
+See [skills/go/reference.md](skills/go/reference.md) for the full list of CLI commands and MCP tools.
 
 > The skill files in this repo are for reference. Authoritative versions are installed via `claudestory setup-skill`.
 
