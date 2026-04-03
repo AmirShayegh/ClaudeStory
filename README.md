@@ -1,5 +1,7 @@
 # claudestory
 
+**[claudestory.com](https://claudestory.com)** | **[npm](https://www.npmjs.com/package/@anthropologies/claudestory)** | **[Privacy Policy](https://claudestory.com/privacy)**
+
 **Cross-session context persistence for AI coding assistants.**
 
 Every AI coding session starts from zero. The assistant doesn't know what was built yesterday, what's broken, what decisions were made, or what to work on next. Developers compensate with long startup prompts and scattered notes, but nothing carries forward automatically.
@@ -113,4 +115,4 @@ npm install -g @anthropologies/claudestory
 
 ---
 
-© 2026 Amir Shayegh. Free for personal and noncommercial use under the [PolyForm Noncommercial License 1.0](LICENSE). For commercial licensing, contact amirshayegh@me.com.
+© 2026 Amir Shayegh. Free for personal and noncommercial use under the [PolyForm Noncommercial License 1.0](LICENSE). For commercial licensing, contact shayegh@me.com.
