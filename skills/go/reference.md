@@ -327,6 +327,9 @@ claudestory setup-skill
 - **claudestory_lesson_update** (id, title?, content?, context?, tags?, status?, supersedes?) — Update lesson
 - **claudestory_lesson_reinforce** (id) — Reinforce lesson — increment count and update lastValidated
 - **claudestory_selftest** — Integration smoke test — create/update/delete cycle
+- **claudestory_review_lenses_prepare** (stage, diff, changedFiles, ticketDescription?, reviewRound?, priorDeferrals?) — Prepare multi-lens review — activation, secrets gate, context packaging, prompt building
+- **claudestory_review_lenses_synthesize** (stage?, lensResults, activeLenses, skippedLenses, reviewRound?, reviewId?) — Synthesize lens results — schema validation, blocking policy, merger prompt generation
+- **claudestory_review_lenses_judge** (mergerResultRaw, stage?, lensesCompleted, lensesFailed, lensesInsufficientContext?, lensesSkipped?, convergenceHistory?) — Prepare judge prompt — verdict calibration, convergence tracking
 
 ## /story design
 
