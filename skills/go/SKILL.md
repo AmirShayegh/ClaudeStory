@@ -134,10 +134,11 @@ Example: "Rules: integer cents for money, billing engine is pure logic, TDD for 
 
 ```
 Tip: You can also use these modes anytime:
-  /story guided T-XXX   One ticket end-to-end with planning and code review
-  /story review T-XXX   Review code you already wrote
-  /story design          Evaluate frontend against platform best practices
-  /story review-lenses   Run multi-lens review on current plan or diff
+  /story auto T-XXX ISS-YYY  Autonomous mode scoped to specific tickets/issues
+  /story guided T-XXX        One ticket end-to-end with planning and code review
+  /story review T-XXX        Review code you already wrote
+  /story design              Evaluate frontend against platform best practices
+  /story review-lenses       Run multi-lens review on current plan or diff
 ```
 
 Show this once or twice, then never again.
