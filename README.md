@@ -90,11 +90,15 @@ Session start          Work                    Session end
 
 ### Autonomous Mode
 - **`/story auto`** — Picks tickets, plans, reviews, implements, and commits in a loop until all work is done
-- **Multi-backend code review** — Independent plan and code review via pluggable backends (Codex, agent) with adaptive depth
+- **Targeted auto** — `/story auto T-183 T-184 ISS-077` works only on specified items in order, then stops
+- **Multi-lens code review** — 8 specialized reviewers run in parallel (clean code, security, error handling, performance, API design, concurrency, test quality, accessibility), findings synthesized into a single verdict. Runs automatically in autonomous mode or manually via `/story review-lenses`
+- **Multi-backend review** — Independent plan and code review via pluggable backends (Codex, agent) with adaptive depth
+- **Frontend design evaluation** — `/story design` evaluates UI against platform best practices (web, iOS, macOS, Android) with priority ordering: clarity > hierarchy > platform correctness > accessibility > state completeness
 - **TDD stage** — Write tests before implementation, validate against baseline (configurable)
 - **Endpoint verification** — Smoke test HTTP endpoints after code review (configurable)
 - **Periodic checkpoints** — Auto-handover every N tickets for session continuity
 - **Tiered access** — `/story review T-XXX`, `/story plan T-XXX`, `/story guided T-XXX` for scoped workflows
+- **Configurable pipeline** — `/story settings` to tune quality stages, review backends, session limits, and handover frequency
 
 ### Universal
 - **Language-agnostic** — Works with any project, any language, any AI assistant that supports MCP
