@@ -16,7 +16,6 @@ claudestory tracks tickets, issues, roadmap, and handovers in a `.story/` direct
 - `/story auto T-183 T-184 ISS-077` -> start targeted autonomous mode with ONLY those items in order (read `autonomous-mode.md`; pass the IDs as `targetWork` array in the start call)
 - `/story review T-XXX` -> start review mode for a ticket (read `autonomous-mode.md` in the same directory as this skill file; if not found, tell user to run `claudestory setup-skill`)
 - `/story plan T-XXX` -> start plan mode for a ticket (read `autonomous-mode.md` in the same directory as this skill file; if not found, tell user to run `claudestory setup-skill`)
-- `/story guided T-XXX` -> start guided mode for a ticket (read `autonomous-mode.md` in the same directory as this skill file; if not found, tell user to run `claudestory setup-skill`)
 - `/story handover` -> draft a session handover. Summarize the session's work, then call `claudestory_handover_create` with the drafted content and a descriptive slug
 - `/story snapshot` -> save project state (call `claudestory_snapshot` MCP tool)
 - `/story export` -> export project for sharing. Ask the user whether to export the current phase or the full project, then call `claudestory_export` with either `phase` or `all` set
@@ -134,10 +133,11 @@ Example: "Rules: integer cents for money, billing engine is pure logic, TDD for 
 
 ```
 Tip: You can also use these modes anytime:
-  /story guided T-XXX   One ticket end-to-end with planning and code review
-  /story review T-XXX   Review code you already wrote
-  /story design          Evaluate frontend against platform best practices
-  /story review-lenses   Run multi-lens review on current plan or diff
+  /story auto T-XXX ISS-YYY  Autonomous mode scoped to specific tickets/issues
+  /story review T-XXX        Review code you already wrote
+  /story plan T-XXX          Plan a ticket with review rounds
+  /story design              Evaluate frontend against platform best practices
+  /story review-lenses       Run multi-lens review on current plan or diff
 ```
 
 Show this once or twice, then never again.

@@ -90,15 +90,9 @@ The autonomous guide supports four execution tiers. Same guide, same handlers, d
 3. On plan review approve: session ends automatically. On revise/reject: revise plan, re-review
 4. The approved plan is saved in `.story/sessions/<id>/plan.md`
 
-### `/story guided T-XXX`
+### `/story guided T-XXX` (deprecated -- alias for targeted auto)
 
-"Do T-XXX end to end with review." Full pipeline for a single ticket: PLAN -> PLAN_REVIEW -> IMPLEMENT -> CODE_REVIEW -> FINALIZE -> COMPLETE -> HANDOVER -> SESSION_END.
-
-1. Call `claudestory_autonomous_guide` with `{ "sessionId": null, "action": "start", "mode": "guided", "ticketId": "T-XXX" }`
-2. Follow every instruction exactly, calling the guide back after each step
-3. Session ends automatically after the single ticket is complete
-
-**Guided vs Auto:** Guided mode forces `maxTicketsPerSession: 1` and exits after the ticket. Auto mode loops until all tickets are done or the session limit is reached.
+Use `/story auto T-XXX` instead. A single-ticket targeted auto session is equivalent. The guide handler still accepts `mode: "guided"` for backward compatibility but routes to the same targeted auto path.
 
 ### All tiered modes:
 - Require a `ticketId` -- no ad-hoc review without a ticket in V1
